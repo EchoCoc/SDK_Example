@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Resource.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SDK-Sample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>5F8879F926CCFC6E00AF8698</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FE28CB826CF8D46005A2B38</key>
 		<dict>
 			<key>primary</key>
 			<true/>

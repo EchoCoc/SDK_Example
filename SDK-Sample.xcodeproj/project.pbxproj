@@ -11,6 +11,8 @@
 		5FD65C1026CE3C2300D4B629 /* GetSomething.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FD65C0E26CE3C2300D4B629 /* GetSomething.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 		5FD65C1126CE3C2300D4B629 /* GetSomething.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD65C0F26CE3C2300D4B629 /* GetSomething.m */; platformFilter = ios; };
 		5FD65C3B26CE43A400D4B629 /* GetSomething.m in Headers */ = {isa = PBXBuildFile; fileRef = 5FD65C0F26CE3C2300D4B629 /* GetSomething.m */; platformFilter = ios; settings = {ATTRIBUTES = (Private, ); }; };
+		5FE28CC126CF8D65005A2B38 /* ic_anchor_unfollow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE28CBF26CF8D65005A2B38 /* ic_anchor_unfollow@2x.png */; };
+		5FE28CC226CF8D65005A2B38 /* ic_anchor_unfollow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE28CC026CF8D65005A2B38 /* ic_anchor_unfollow@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +20,20 @@
 		5F8879FD26CCFC6E00AF8698 /* SDK_Sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDK_Sample.h; sourceTree = "<group>"; };
 		5FD65C0E26CE3C2300D4B629 /* GetSomething.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetSomething.h; sourceTree = "<group>"; };
 		5FD65C0F26CE3C2300D4B629 /* GetSomething.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetSomething.m; sourceTree = "<group>"; };
+		5FE28CB926CF8D46005A2B38 /* Resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE28CBF26CF8D65005A2B38 /* ic_anchor_unfollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_anchor_unfollow@2x.png"; sourceTree = "<group>"; };
+		5FE28CC026CF8D65005A2B38 /* ic_anchor_unfollow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_anchor_unfollow@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5F8879F726CCFC6E00AF8698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE28CB626CF8D46005A2B38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				5F8879FC26CCFC6E00AF8698 /* SDK-Sample */,
+				5FE28CBA26CF8D46005A2B38 /* Resource */,
 				5F8879FB26CCFC6E00AF8698 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				5F8879FA26CCFC6E00AF8698 /* SDK_Sample.framework */,
+				5FE28CB926CF8D46005A2B38 /* Resource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +77,15 @@
 				5FD65C0F26CE3C2300D4B629 /* GetSomething.m */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		5FE28CBA26CF8D46005A2B38 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5FE28CBF26CF8D65005A2B38 /* ic_anchor_unfollow@2x.png */,
+				5FE28CC026CF8D65005A2B38 /* ic_anchor_unfollow@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +122,23 @@
 			productReference = 5F8879FA26CCFC6E00AF8698 /* SDK_Sample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5FE28CB826CF8D46005A2B38 /* Resource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FE28CBE26CF8D46005A2B38 /* Build configuration list for PBXNativeTarget "Resource" */;
+			buildPhases = (
+				5FE28CB526CF8D46005A2B38 /* Sources */,
+				5FE28CB626CF8D46005A2B38 /* Frameworks */,
+				5FE28CB726CF8D46005A2B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Resource;
+			productName = Resource;
+			productReference = 5FE28CB926CF8D46005A2B38 /* Resource.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -108,6 +148,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					5F8879F926CCFC6E00AF8698 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					5FE28CB826CF8D46005A2B38 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -126,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				5F8879F926CCFC6E00AF8698 /* SDK-Sample */,
+				5FE28CB826CF8D46005A2B38 /* Resource */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +182,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FE28CB726CF8D46005A2B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE28CC226CF8D65005A2B38 /* ic_anchor_unfollow@3x.png in Resources */,
+				5FE28CC126CF8D65005A2B38 /* ic_anchor_unfollow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,6 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FD65C1126CE3C2300D4B629 /* GetSomething.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE28CB526CF8D46005A2B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +390,44 @@
 			};
 			name = Release;
 		};
+		5FE28CBC26CF8D46005A2B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 6T4KK8RRG2;
+				INFOPLIST_FILE = Resource/Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlb.sdk-sample.Resource";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5FE28CBD26CF8D46005A2B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 6T4KK8RRG2;
+				INFOPLIST_FILE = Resource/Info.plist;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlb.sdk-sample.Resource";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +445,15 @@
 			buildConfigurations = (
 				5F887A0326CCFC6E00AF8698 /* Debug */,
 				5F887A0426CCFC6E00AF8698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FE28CBE26CF8D46005A2B38 /* Build configuration list for PBXNativeTarget "Resource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FE28CBC26CF8D46005A2B38 /* Debug */,
+				5FE28CBD26CF8D46005A2B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
